@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.App {
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+.navbar {
+  background: rgb(255, 115, 115) !important;
+}
+.nav-logo {
+  width: 6rem;
+}
