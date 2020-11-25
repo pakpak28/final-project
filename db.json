@@ -3803,36 +3803,6 @@
       "name": "bulbasaur",
       "catched": true,
       "date": "24.11.2020"
-    },
-    {
-      "id": 2,
-      "name": "ivysaur",
-      "catched": true,
-      "date": "24.11.2020"
-    },
-    {
-      "id": 3,
-      "name": "venusaur",
-      "catched": true,
-      "date": "25.11.2020"
-    },
-    {
-      "id": 9,
-      "name": "blastoise",
-      "catched": true,
-      "date": "25.11.2020"
-    },
-    {
-      "id": 10,
-      "name": "caterpie",
-      "catched": true,
-      "date": "25.11.2020"
-    },
-    {
-      "id": 20,
-      "name": "raticate",
-      "catched": true,
-      "date": "25.11.2020"
     }
   ]
 }

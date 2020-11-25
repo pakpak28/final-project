@@ -12,26 +12,19 @@ export default class CatchButton extends Component {
   }
 
   handleClick() {
-    // axios.get(`http://localhost:5000/catched/${this.state.id}`).then((res) => {
-    //   console.log(res.data);
-    // });
-    axios
-      .post(
-        "http://localhost:5000/catched/",
-        {
-          id: this.props.id,
-          name: this.props.name,
-          catched: true,
-          date: new Date().toLocaleDateString(),
-        },
-        { headers: { "Content-Type": "application/json" } }
-      )
-      .then((res) => {
-        // if (res.data.catched) {
-        //   this.setState({
-        //     active: !this.state.active,
-        //   });
-      });
+    this.setState({
+      active: !this.state.active,
+    });
+    axios.post(
+      "http://localhost:5000/catched/",
+      {
+        id: this.props.id,
+        name: this.props.name,
+        catched: true,
+        date: new Date().toLocaleDateString(),
+      },
+      { headers: { "Content-Type": "application/json" } }
+    );
   }
 
   render() {
@@ -45,7 +38,7 @@ export default class CatchButton extends Component {
           name={this.props.name}
           disabled={this.state.active ? true : false}
         >
-          Catch!
+          {this.state.active ? "Catched!" : "Catch"}
         </button>
       </div>
     );

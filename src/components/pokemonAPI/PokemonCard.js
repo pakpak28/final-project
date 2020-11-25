@@ -26,11 +26,7 @@ export default class PokemonCard extends Component {
             <div className="card-header ">
               <div>{this.state.id}</div>
               <div>{this.state.name}</div>
-              <CatchButton
-                id={this.state.id}
-                name={this.state.name}
-                disabled={this.state.catched}
-              />
+              <CatchButton id={this.state.id} disabled={this.state.catched} />
             </div>
 
             <ImageLink id={this.state.id} />

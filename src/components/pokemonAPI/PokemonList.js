@@ -43,7 +43,6 @@ export default class PokemonList extends Component {
               key={pokemon.name}
               name={pokemon.name}
               id={pokemon.id}
-              cathched={pokemon.cathched}
             />
           ))}
           <div className="load-more ">
